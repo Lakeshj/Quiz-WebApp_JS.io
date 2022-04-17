@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 300 1.2rem sans-serif;
+}
+
+body{
+    background: #1e1f1e;
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: burlywood;
+    width: 38rem;
+    
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    display: flex;
+    place-items: center;
+    box-shadow: 0 0 5px 5px rgb(0, 0, 0) ;
+}
+
+/* dynamic creation div Quiz */
+
+.quiz h1{
+    font: 600 1.35rem sans-serif ;
+}
+
+.quiz .QuizQuestion{
+    margin-top: 1rem;
+    background: #5a4d19;
+    border-radius: 2rem;
+    padding: 1rem;
+    color: #fff8dc;
+    box-shadow: 6px 6px 0px 6px rgb(44 23 50);
+}
+.quiz .QuizQuestion h2{
+    font: 500 1.2rem monospace;
+}
+.quiz .QuizQuestion ul{
+    margin: 0.5rem 2rem;
+    
+}
+.quiz .QuizQuestion ul li{
+    font: 500 1.2rem sans-serif;
+    list-style: none;
+    line-height: 1.2rem;
+}
+.quiz .QuizQuestion [type = 'radio']{
+    margin-right: 1rem;
+}
+.quiz .QuizQuestion .BtnCont{
+    display: flex;
+    
+}
+.quiz .QuizQuestion .BtnCont button{
+    
+    font: 500 1rem sans-serif;
+    width: 8rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    background: #854485;
+    color: #e5d6bf;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 1px 10px 1px rgb(0 0 0);
+
+}
+.quiz .QuizQuestion .BtnCont button:hover{
+    background: #b90cb9;
+    color: #ffffff;
+}
+
+.quiz .QuizQuestion .BtnCont #submit{
+    background: #a90808 ;
+    color: #e5d6bf;
+}
+.quiz .QuizQuestion .BtnCont #submit:hover{
+    background: #c91515;
+    color: #ffffff;
+}
+
+
+.quiz .QuizQuestion .BtnCont button:active,
+.anscont  #scoreBtn:active{
+    transform: scale(0.98);
+}
+
+/* Score Board */
+.anscont{
+    width: 28rem;
+    padding: 1rem;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    background: teal;
+    color: #cff3ac;
+    border-radius: 1rem;
+    box-shadow: 0 4px 13px 2px rgb(0 0 0);
+    
+} 
+.anscontainer {
+    display: none;
+}
+.anscont #scoreBtn {
+    background: #a3601c;
+    color: #f1eeeb;
+
+    font: 500 1rem sans-serif;
+    width: 8rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 1px 10px 1px rgb(0 0 0);
+}
+
+.anscont #scoreBtn:hover {  
+    background: #e1903e;
+    color: #120b04;
+}
