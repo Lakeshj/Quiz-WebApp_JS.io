@@ -29,6 +29,7 @@ body{
     place-items: center;
     box-shadow: 0 0 5px 5px rgb(0 0 0);
     min-height: 22rem;
+    padding: 0 2rem;
 }
 
 /* dynamic creation div Quiz */
